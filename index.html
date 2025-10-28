@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chookie Mangus's Arcade</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☣️</text></svg>">
+</head>
+<body>
+
+    <!-- This canvas sits ON TOP of everything -->
+    <canvas id="poop-overlay-canvas"></canvas>
+
+    <div class="scanlines"></div>
+    <div id="image-zapper-container"></div>
+
+    <div class="container">
+        <header>
+            <h1 class="flicker-text">Chookie Mangus's Arcade</h1>
+            <nav class="arcade-buttons">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#photos">PHOTOS</a></li>
+                    <li><a href="#videos">VIDEOS</a></li>
+                    <li><a href="#games">GAMES</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- HOME SECTION -->
+            <section id="home">
+                <div class="arcade-cabinet">
+                    <h2>LATEST MESS</h2>
+                    <div class="screen">
+                         <video class="main-video" src="media/vids/main.webm" autoplay loop muted playsinline></video>
+                        <button class="loud-button">PRESS</button>
+                    </div>
+                </div>
+                <div class="high-scores">
+                    <h2 class="glitch" data-text="HIGH SCORES">HIGH SCORES</h2>
+                    <pre>
+RANK  NAME      SCORE
+1ST   CHOOKIE   999999 (BEST MESS MAKER)
+2ND   CHOOKIE   999998 (SCARIEST GUY)
+3RD   CHOOKIE   999997 (BEST SMELL)
+4TH   CHOOKIE   999996 (ICE CREAM MASTER)
+                    </pre>
+                </div>
+            </section>
+
+            <!-- PHOTOS SECTION (JavaScript will automatically fill this grid) -->
+            <section id="photos">
+                <h2 class="glitch" data-text="PHOTOS">PHOTOS</h2>
+                <div class="media-grid">
+                    <!-- Images will be loaded here automatically -->
+                </div>
+            </section>
+
+            <!-- VIDEOS SECTION (JavaScript will automatically fill this grid) -->
+            <section id="videos">
+                <h2 class="glitch" data-text="VIDEOS">VIDEOS</h2>
+                <div class="media-grid">
+                    <!-- Videos will be loaded here automatically -->
+                </div>
+            </section>
+            
+            <!-- GAMES SECTION -->
+            <section id="games">
+                 <h2 class="glitch" data-text="SNAKE BUT GROSS">SNAKE BUT GROSS</h2>
+                 <div class="game-container">
+                    <canvas id="snake-game-canvas" width="600" height="400"></canvas>
+                    <div id="game-ui">
+                        <p>SCORE: <span id="score-display">0</span></p>
+                        <button id="start-game-btn" class="loud-button">START GAME</button>
+                    </div>
+                 </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <marquee>+++ ALL RIGHTS DESECRATED BY CHOOKIE MANGUS +++ THIS IS A GOOD SITE +++ NO REFUNDS +++</marquee>
+            <p><a href="#">HOW I MADE THIS GOOD SITE</a></p>
+        </footer>
+    </div>
+    
+    <script type="module" src="arcade.js"></script>
+</body>
+</html>

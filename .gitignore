@@ -1,0 +1,16 @@
+# IDE-specific files (PyCharm)
+.idea/
+
+# Python virtual environment
+.venv/
+
+# Ignore all media content by default
+media/pics/*
+media/vids/*
+
+# BUT, force include essential media files needed for the site to work
+!media/pics/snakehead.png
+!media/vids/main.webm
+
+# Ignore the images folder with cursor/background
+images/

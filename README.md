@@ -1,15 +1,3 @@
-<p align="center">
-<pre>
-,---.
-/ O O \
-| \ / |
-/'--_--,'/|
-| /| |
-| | |/
-\___/ /
-'---'
-</pre>
-</p>
 
 <h1 align="center">☣️ Chookie Mangus's Arcade ☣️</h1>
 
